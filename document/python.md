@@ -313,7 +313,7 @@ For the rest of this session, we're going to expand beyond the REPL to write and
 
 ## Your First Script
 
-To open the code editor, click the RUN button below. Then, type the following line into the code editor and click the RUN button in the slide-out panel:
+To open the code editor, click the Open Editor button below. Then, type the following line into the code editor and click the RUN button in the slide-out panel:
 
 ```python
 print("Hello World!")
@@ -453,7 +453,6 @@ In the Python REPL below, try to create as many errors as you can in the next fe
 
 ### Solution
 
-TODO: possibly fix up solutions (in terms of display)
 Some examples of **syntax errors** include...
 
 - Starting the variable name with a special character:
@@ -562,13 +561,13 @@ def add_one(x):
  
 When creating a function, we begin by writing `def` before our chosen function name. The function name is typically descriptive in nature. We named the above function `add_one` following [Python naming conventions](https://www.python.org/dev/peps/pep-0008/#function-and-variable-names), as the function will be ADDING 1 to our inputted integer. We always need a closed parentheses `()` after our function name, which in this case, takes one argument (or input), which we will temporarily call `x` (we can name this parameter whatever we want, as long as we use the same name within the body of the function). Then, we end the first line with a `:`, return, and indent by 2 spaces to write code describing what this function should "do." In this case, we want the function to `print` the result of adding `1` to our input, or `x`. Remember, we need parentheses every time we print something!
 
-Next, if we want to call our function, we will need to actually pass in an argument to see a result. To do so, we write the following line of code below our function (making sure this next line _isn't_ indented):
+Next, if we want to __call__ our function, we will need to actually pass in an argument to see a result. To do so, we write the following line of code below our function (making sure this next line _isn't_ indented):
 
 ```python
 add_one(2)
 ```
 
-Here, we are telling the computer to pass in `2` to see if we get our expected output of `3`.
+Here, we are calling our function and telling the computer to pass in `2` to see if we get our expected output of `3`.
 
 ### Optional 
 
@@ -599,7 +598,7 @@ print(add_one(2))
 
 ## Writing your second function
 
-Our functions do not have to be "mathematical" in nature. Let's say that I wanted to say a friendly hello, but didn't want to type out a long sentence every time I wanted to do so. We could automate this process with a function. In the code editor below, write the following lines:
+Our functions do not have to be "mathematical" in nature. Let's say that I wanted to say a friendly hello, but didn't want to type out a long sentence every time I wanted to do so. We could automate this process with a function. In the code editor, write the following lines:
 
 ```python
 def greet():
@@ -651,7 +650,7 @@ Remember lists? They look like this:
 books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
 ```
 
-Let's create a list together and print it out. In the code editor below, write the following lines:
+Let's create a list together and print it out. In the code editor, write the following lines:
 
 ```python
 books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
@@ -804,7 +803,7 @@ for <variable name> in <list name>:
 
 Indented code like this is known as a "code block." Python will run the `<do something>` code in the code block once for each item in the list. You can also refer to `<variable name>` in the `<do something>` block.
 
-You can also loop through items within a string. Type the following code into the editor below:
+You can also loop through items within a string. Type the following code into the editor to see the result:
 
 ```python
 for letter in "hello":
@@ -812,7 +811,7 @@ for letter in "hello":
 ```
 
 <CodeEditor></CodeEditor>
- 
+
 The result should print out each letter of the string `hello`, one by one.
 
 ## A Note on Variable Names
@@ -1347,6 +1346,7 @@ Once you get the loop to work, you can add more `elif` statements to add more bo
 Here's how you would include a `while` statement in our library application:
 
 <Secret>
+<CodeEditor>
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 user_exit = False
 while user_exit == False:
@@ -1366,6 +1366,9 @@ while user_exit == False:
         user_exit = True
     else:
         print("I don't know what you want me to do!")
+</CodeEditor>
+
+Make sure to type "exit" to end the program and view the results of your commands.
 </Secret>
 
 ## Evaluation
@@ -1690,7 +1693,7 @@ __10. Why would someone use dir()? (Select all that apply):__
 
 Revisit the [Objects in Python](/workshops/python/?page=2) lesson to learn more.
 
-## __Suggested Further Readings and Tutorials__
+## Suggested Further Readings and Tutorials
 
 Hannah Aizenman, a former Digital Fellow, wrote up a great blog post introducing python "libraries," or collections of python code, for various project types, from creating a website, to getting, exploring, and visualizing data, and working with images, video, spreadsheets, among other ideas. Check out her suggestions in [How Do I Solve [insert problem here] With Python?](https://digitalfellows.commons.gc.cuny.edu/2018/02/13/python_libraries/) 
 
